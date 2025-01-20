@@ -33,8 +33,21 @@ h1 {
     color: #333;
 }
 
-p {
+@keyframes clignoter {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.soustext {
     color: #555;
+    animation: clignoter 1s infinite;
 }
 
 .links {
@@ -112,6 +125,7 @@ p {
 
     .links {
         gap: 10px;
+        margin-bottom: 20px;
      
     }
 
